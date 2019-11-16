@@ -21,9 +21,6 @@ class HomeViewController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        let viewgesture = UITapGestureRecognizer()
-        viewgesture.numberOfTapsRequired = 1
-        viewgesture.addTarget(self, action: #selector(viewbill))
 
         
         let deletegesture = UITapGestureRecognizer()

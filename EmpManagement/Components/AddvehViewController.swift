@@ -22,7 +22,55 @@ class AddvehViewController: UIViewController {
                    var vehtype : String = ""
                    var pickerView = ToolbarPickerView()
     
-   
+    @IBOutlet var testimage: UIImageView!
+    
+    
+                   @IBOutlet var vehsegment: UISegmentedControl!
+    
+                   @IBOutlet var but_addveh: UIButton!
+    
+    
+    @IBAction func actionvehsegment(_ sender: Any) {
+        
+          if (vehsegment.selectedSegmentIndex == 0){
+            vehtype = "Motorcycle"
+            
+        }
+        else if(vehsegment.selectedSegmentIndex == 1)
+          {
+            vehtype = "Car"
+            
+        }
+        
+    }
+    
+    
+    @IBAction func but_back_vehicle(_ sender: Any) {
+        
+        let obj = self.storyboard?.instantiateViewController(withIdentifier: "VehiclelistViewController") as! VehiclelistViewController
+              obj.position = userposition
+               self.navigationController?.pushViewController(obj, animated: true)
+        
+    }
+    
+    @IBAction func butaddveh(_ sender: Any) {
+        
+        if(companyName_txtFld.text == "")
+               {
+                   showdialog(data: "please select company")
+               }
+               else if(modelName_txtFld.text == "")
+               {
+                     showdialog(data: "please select model")
+               }
+               else if(plate_txtFld.text == "")
+               {
+                     showdialog(data: "please enter plate no")
+               }
+               else if(year_txtFld.text == "")
+               {
+                     showdialog(data: "please select year")
+               }
         else
         {
             var vehobj = Vehicledata()

@@ -43,3 +43,14 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
                 self.present(alert, animated: true)
     }
 
+    else if(optionSelect == "addvehicle")
+    {
+        
+      let obj = self.storyboard?.instantiateViewController(withIdentifier: "VehiclelistViewController") as! VehiclelistViewController
+        
+        obj.position = indexPath.row
+                  
+                         self.navigationController?.pushViewController(obj, animated: true)
+        
+}
+

@@ -13,7 +13,19 @@ class FirstViewController: UIViewController {
     @IBOutlet var but_coustmet: UIButton!
     @IBOutlet var but_admin: UIButton!
 
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+  
+      
+        self.but_coustmet.layer.cornerRadius = 10
+                 self.but_coustmet.clipsToBounds = true
+        
+        self.but_admin.layer.cornerRadius = 10
+                 self.but_admin.clipsToBounds = true
+
+
+        // Do any additional setup after loading the view.
+    }
     
     @IBAction func but_admin(_ sender: Any)
     {

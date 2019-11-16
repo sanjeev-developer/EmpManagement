@@ -26,7 +26,9 @@ class HomeViewController: UIViewController
         viewgesture.addTarget(self, action: #selector(viewbill))
 
         
-        
+        let deletegesture = UITapGestureRecognizer()
+        deletegesture.numberOfTapsRequired = 1
+        deletegesture.addTarget(self, action: #selector(deletecoustmer))
         
         let addgesture = UITapGestureRecognizer()
               addgesture.numberOfTapsRequired = 1

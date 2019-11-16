@@ -153,7 +153,8 @@ class AddBillViewController: UIViewController  {
                                    fulltime_view.isHidden = true
                 
                 seglect = 3
-                }
+                
+            }
         }
         
         @IBAction func butBackBill(_ sender: Any) {

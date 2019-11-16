@@ -14,13 +14,7 @@ class AddvehViewController: UIViewController {
                    @IBOutlet weak var modelName_txtFld: UITextField!
                    @IBOutlet weak var plate_txtFld: UITextField!
                    @IBOutlet weak var year_txtFld: UITextField!
-                   var companyNameArr = [String]()
-                   var selection : Int = 0
-                   var vehicleposition : Int = 0
-                   var userposition : Int = 0
-                   var purpose : String = ""
-                   var vehtype : String = ""
-                   var pickerView = ToolbarPickerView()
+                   
     
     @IBOutlet var testimage: UIImageView!
     

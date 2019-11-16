@@ -37,4 +37,6 @@ class FirstViewController: UIViewController {
             return (try? PropertyListSerialization.propertyList(from: xml, options: .mutableContainersAndLeaves, format: nil)) as? [String]
         }
 
-    
+        return nil
+    }
+}

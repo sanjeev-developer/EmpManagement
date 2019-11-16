@@ -26,10 +26,7 @@ class AddBillViewController: UIViewController  {
     @IBOutlet var edt_ptc_hw: UITextField!
     @IBOutlet var edt_ptc_cp: UITextField!
     
-    //fulltime view data
-    @IBOutlet var fulltime_view: UIView!
-    @IBOutlet var edt_fulltime_bonus: UITextField!
-    @IBOutlet var edt_fulltime_salary: UITextField!
+  
     
     //ptf view data
     @IBOutlet weak var partTime_view_ptf: UIView!

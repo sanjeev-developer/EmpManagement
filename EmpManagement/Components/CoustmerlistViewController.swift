@@ -64,4 +64,11 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             
     }
 }
+override func viewDidLoad() {
+    super.viewDidLoad()
+    tabelview.tableFooterView = UIView()
+    //self.tabelview.register(CoustmerTableViewCell.self, forCellReuseIdentifier: "cell")
+
+    // Do any additional setup after loading the view.
+}
 

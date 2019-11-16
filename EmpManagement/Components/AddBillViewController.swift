@@ -146,14 +146,6 @@ class AddBillViewController: UIViewController  {
                 
                 seglect = 2
                 
-            }else if segControl.selectedSegmentIndex == 3{
-                    inter_View.isHidden = true
-                                   partime_view_ptc.isHidden = false
-                                   partTime_view_ptf.isHidden = true
-                                   fulltime_view.isHidden = true
-                
-                seglect = 3
-                
             }
         }
         

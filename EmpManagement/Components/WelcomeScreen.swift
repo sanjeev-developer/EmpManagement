@@ -27,12 +27,7 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func but_admin(_ sender: Any)
-    {
-           let obj = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-         obj.decison = 0
-                                     self.navigationController?.pushViewController(obj, animated: true)
-    }
+    
     
  
     @IBAction func but_coustmer(_ sender: Any) {

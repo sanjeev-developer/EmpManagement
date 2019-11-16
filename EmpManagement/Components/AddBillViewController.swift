@@ -37,7 +37,6 @@ class AddBillViewController: UIViewController  {
     @IBOutlet var edt_hourworked_ptf: UITextField!
     @IBOutlet var edt_partime_ptf: UITextField!
     
-    var datePicker : UIDatePicker!
     var veharray : [Vehicledata] = []
     @IBOutlet var but_saveemp: UIButton!
     

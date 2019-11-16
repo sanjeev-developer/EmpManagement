@@ -34,7 +34,9 @@ class HomeViewController: UIViewController
               addgesture.numberOfTapsRequired = 1
               addgesture.addTarget(self, action: #selector(addbill))
         
-        
+        let addveh = UITapGestureRecognizer()
+                    addveh.numberOfTapsRequired = 1
+                    addveh.addTarget(self, action: #selector(addvehicle))
         
         let contactgesture = UITapGestureRecognizer()
                     contactgesture.numberOfTapsRequired = 1

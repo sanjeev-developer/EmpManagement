@@ -29,14 +29,4 @@ class FirstViewController: UIViewController {
     
     
     
-    func getPlist(withName name: String) -> [String]?
-    {
-        if  let path = Bundle.main.path(forResource: name, ofType: "pDatabase"),
-            let xml = FileManager.default.contents(atPath: path)
-        {
-            return (try? PropertyListSerialization.propertyList(from: xml, options: .mutableContainersAndLeaves, format: nil)) as? [String]
-        }
-
-        return nil
-    }
-}
+  

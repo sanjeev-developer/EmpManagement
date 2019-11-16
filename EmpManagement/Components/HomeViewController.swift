@@ -42,9 +42,7 @@ class HomeViewController: UIViewController
                     contactgesture.numberOfTapsRequired = 1
                     contactgesture.addTarget(self, action: #selector(contactbrowser))
         
-        let aboutgesture = UITapGestureRecognizer()
-                    aboutgesture.numberOfTapsRequired = 1
-                    aboutgesture.addTarget(self, action: #selector(aboutbrowser))
+        
 
             
          view_deletecoustmer.addGestureRecognizer(deletegesture)

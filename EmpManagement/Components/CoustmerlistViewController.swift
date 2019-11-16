@@ -54,3 +54,14 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
 }
 
+
+    else if(optionSelect == "empdesc")
+        {
+            
+          let obj = self.storyboard?.instantiateViewController(withIdentifier: "EmployeeDescViewController") as! EmployeeDescViewController
+            obj.position = indexPath.row
+            self.navigationController?.pushViewController(obj, animated: true)
+            
+    }
+}
+

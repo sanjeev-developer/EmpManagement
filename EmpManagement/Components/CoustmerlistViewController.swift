@@ -72,3 +72,16 @@ override func viewDidLoad() {
     // Do any additional setup after loading the view.
 }
 
+ @IBAction func but_back_clist(_ sender: Any) {
+        
+        let obj = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        self.navigationController?.pushViewController(obj, animated: true)
+    }
+    
+    func deletecoustmer(data : Int)
+    {
+        UserDetails.shared.userarray.remove(at: data)
+        DispatchQueue.main.async { self.tabelview.reloadData() }
+    }
+}
+

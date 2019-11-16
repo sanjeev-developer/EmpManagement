@@ -10,7 +10,6 @@ import UIKit
 
 class AddBillViewController: UIViewController  {
 
-    @IBOutlet var edt_empid: UITextField!
     @IBOutlet var edt_empname: UITextField!
     @IBOutlet var edtDate: UITextField!
     @IBOutlet weak var segment_contoller: UISegmentedControl!

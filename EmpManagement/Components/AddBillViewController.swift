@@ -41,7 +41,6 @@ class AddBillViewController: UIViewController  {
     var veharray : [Vehicledata] = []
     @IBOutlet var but_saveemp: UIButton!
     
-    var seglect : Int = 0
     
     
     @IBAction func addemployee(_ sender: Any) {

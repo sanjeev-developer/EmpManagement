@@ -16,7 +16,9 @@ class AddBillViewController: UIViewController  {
     @IBOutlet weak var segment_contoller: UISegmentedControl!
     
     //intern view data
-    
+    @IBOutlet weak var inter_View: UIView!
+    @IBOutlet var edt_inten_school: UITextField!
+    @IBOutlet var edt_salary_intern: UITextField!
     
     //ptc viewdata
     @IBOutlet weak var partime_view_ptc: UIView!

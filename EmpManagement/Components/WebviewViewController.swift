@@ -32,8 +32,7 @@ class WebviewViewController: UIViewController, WKNavigationDelegate {
        
         
 }
-    
-   override func loadView() {
+    override func loadView() {
         webflow = WKWebView()
         webflow.navigationDelegate = self
         view = webflow

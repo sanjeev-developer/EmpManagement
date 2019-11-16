@@ -20,3 +20,26 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     cell.txtCellPhone.text =  UserDetails.shared.userarray[indexPath.row].dateofbirth
     return cell
 }
+
+func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 100
+}
+
+func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+    print(indexPath.row)
+
+    if(optionSelect == "delete")
+    {
+         let alert = UIAlertController(title: "Alert", message: "Are you sure you want to delete this Employee", preferredStyle: .alert)
+
+                alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+                    //run your function here
+                    self.deletecoustmer(data : indexPath.row)
+                }))
+
+                alert.addAction(UIAlertAction(title: "no", style: .cancel, handler: nil))
+
+                self.present(alert, animated: true)
+    }
+

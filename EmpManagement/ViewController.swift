@@ -55,3 +55,6 @@ var vehobj = Vehicledata()
                       }
                     }
 
+
+var checkAstatus = UserDefaults.standard.bool(forKey: "Key")
+            if(checkAstatus)

@@ -60,3 +60,7 @@ var checkAstatus = UserDefaults.standard.bool(forKey: "Key")
             if(checkAstatus)
 {
 edt_admin_username.text = UserDefaults.standard.string(forKey: "username")
+edt_admin_password.text = UserDefaults.standard.string(forKey: "password")
+                              switchout.setOn(true, animated: false)
+                             }
+

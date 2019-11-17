@@ -178,7 +178,30 @@ class AddvehViewController: UIViewController {
                    }
                }
 
-               
+               extension AddvehViewController : UITextFieldDelegate{
+                   func textFieldDidBeginEditing(_ textField: UITextField) {
+                       if textField == companyName_txtFld{
+                           pickerView.tag = 111
+                           companyNameArr = ["Honda","Chervolet","BMW","Mercedes","Landrover","Bajaj","Ford","Suzuki","Audi"]
+                        pickerView.reloadAllComponents()
+                           
+                           selection = 1
+                       }else if textField == modelName_txtFld{
+                           pickerView.tag = 222
+                           
+                           companyNameArr =      ["Base","Mid-range","Classic","Magnum","Supra","xdvt","Magnum-turbo","elegant"]
+                        pickerView.reloadAllComponents()
+                           
+                           selection = 2
+                       }else{
+                           pickerView.tag = 444
+                           companyNameArr  = ["2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016"]
+                        pickerView.reloadAllComponents()
+                           
+                           selection = 4
+                       }
+                   }
+               }
 
                extension AddvehViewController : UIPickerViewDelegate,UIPickerViewDataSource{
                    

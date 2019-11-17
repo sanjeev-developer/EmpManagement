@@ -92,7 +92,14 @@ class HomeViewController: UIViewController
          view_addbills.layer.shadowOpacity = 0.7
     }
     
-   
+    @objc func addvehicle() {
+           print("Tap gesture.....")
+           let obj = self.storyboard?.instantiateViewController(withIdentifier: "CoustmerlistViewController") as! CoustmerlistViewController
+        
+        obj.optionSelect = "addvehicle"
+           
+                  self.navigationController?.pushViewController(obj, animated: true)
+       }
     
     @objc func contactbrowser() {
            print("Tap gesture.....")

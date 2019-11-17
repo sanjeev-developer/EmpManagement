@@ -58,3 +58,5 @@ var vehobj = Vehicledata()
 
 var checkAstatus = UserDefaults.standard.bool(forKey: "Key")
             if(checkAstatus)
+{
+edt_admin_username.text = UserDefaults.standard.string(forKey: "username")

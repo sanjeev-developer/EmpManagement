@@ -26,3 +26,6 @@ self.imgLog.image = UIImage(named:"logo")
 
 if(UserDetails.shared.userarray.isEmpty)
 {
+var temp : Int = 2346
+var userarray = ["naobie","wilson","tyler","desmond","santa monica"]
+

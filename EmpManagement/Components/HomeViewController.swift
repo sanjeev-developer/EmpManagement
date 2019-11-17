@@ -78,9 +78,11 @@ class HomeViewController: UIViewController
              view_aboutus.layer.shadowRadius = 12.0
              view_aboutus.layer.shadowOpacity = 0.7
 
-        
-        
-               
+               view_contactus.layer.cornerRadius = 10.0
+               view_contactus.layer.shadowColor = UIColor.gray.cgColor
+               view_contactus.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+               view_contactus.layer.shadowRadius = 12.0
+               view_contactus.layer.shadowOpacity = 0.7
         
         
          view_addbills.layer.cornerRadius = 10.0

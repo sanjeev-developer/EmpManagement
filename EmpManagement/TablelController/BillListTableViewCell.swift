@@ -9,3 +9,12 @@
 import UIKit
 
 class BillListTableViewCell: UITableViewCell {
+@IBOutlet var txtpnameMin: UILabel!
+@IBOutlet var txtcpmMin: UILabel!
+@IBOutlet var txtpminconsumedMin: UILabel!
+@IBOutlet var viewMin: UIView!
+@IBOutlet var viewGb: UIView!
+@IBOutlet var viewHydro: UIView!
+@IBOutlet var txtpnameGb: UILabel!
+@IBOutlet var txtgconsumedGb: UILabel!
+@IBOutlet var txtdate: UILabel!

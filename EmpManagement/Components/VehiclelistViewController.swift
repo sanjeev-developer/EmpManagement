@@ -118,3 +118,12 @@ func movetoedit(data : Int)
     self.navigationController?.pushViewController(obj, animated: true)
 }
 
+@IBAction func butmovetoadd(_ sender: Any) {
+        
+        let obj = self.storyboard?.instantiateViewController(withIdentifier: "AddvehViewController") as! AddvehViewController
+        obj.userposition = position
+        obj.purpose = "add"
+          self.navigationController?.pushViewController(obj, animated: true)
+    }
+    
+}

@@ -22,13 +22,7 @@ class AddvehViewController: UIViewController {
                    var vehtype : String = ""
                    var pickerView = ToolbarPickerView()
     
-    @IBOutlet var testimage: UIImageView!
-    
-    
-                   @IBOutlet var vehsegment: UISegmentedControl!
-    
-                   @IBOutlet var but_addveh: UIButton!
-    
+   
     
     @IBAction func actionvehsegment(_ sender: Any) {
         

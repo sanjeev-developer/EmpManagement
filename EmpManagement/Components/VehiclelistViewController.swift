@@ -20,4 +20,15 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
     return( UserDetails.shared.userarray[position].Vehicle.count)
 }
 
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
+let cell = vehicletabel.dequeueReusableCell(withIdentifier: "vehiclecell", for: indexPath) as! VehicleListTableViewCell
+cell.txt_vehicle_type.text =  UserDetails.shared.userarray[position].Vehicle[indexPath.row].vehicletype
+cell.txt_vehicle_model.text =  UserDetails.shared.userarray[position].Vehicle[indexPath.row].model
+cell.txt_vehicle_plate.text =  UserDetails.shared.userarray[position].Vehicle[indexPath.row].plate
+cell.txt_comapny.text =  UserDetails.shared.userarray[position].Vehicle[indexPath.row].company
+
+if(UserDetails.shared.userarray[position].Vehicle[indexPath.row].company == "Honda")
+{
+ cell.img_list.image = UIImage(named: "honda")
+}

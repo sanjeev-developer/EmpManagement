@@ -163,10 +163,7 @@ class AddvehViewController: UIViewController {
             {
                 vehsegment.selectedSegmentIndex = 1
             }
-            else
-            {
-                vehsegment.selectedSegmentIndex = 0
-            }
+            
             
             companyName_txtFld.text = UserDetails.shared.userarray[userposition].Vehicle[vehicleposition].company
                                   modelName_txtFld.text = UserDetails.shared.userarray[userposition].Vehicle[vehicleposition].model

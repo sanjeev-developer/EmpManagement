@@ -32,3 +32,8 @@ if(UserDetails.shared.userarray[position].Vehicle[indexPath.row].company == "Hon
 {
  cell.img_list.image = UIImage(named: "honda")
 }
+else if (UserDetails.shared.userarray[position].Vehicle[indexPath.row].company == "Chervolet")
+{
+    cell.img_list.image = UIImage(named: "cheve")
+}
+

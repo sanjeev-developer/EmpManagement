@@ -29,4 +29,5 @@ if(UserDetails.shared.userarray.isEmpty)
 var temp : Int = 2346
 var userarray = ["naobie","wilson","tyler","desmond","santa monica"]
 var emailarray = ["naobie@gmail.com","wilson@gmail.com","tyler@gmail.com","desmond@gmail.com","santamonica@gmail.com"]
-
+for i in 1...userarray.count{
+                         var userdata = Userdata()

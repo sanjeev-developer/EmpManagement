@@ -233,18 +233,7 @@ class AddBillViewController: UIViewController  {
          }
          
          // MARK:- Button Done and Cancel
-         @objc func doneClick() {
-             let dateFormatter1 = DateFormatter()
-             dateFormatter1.dateStyle = .medium
-             dateFormatter1.timeStyle = .none
-             edtDate.text = dateFormatter1.string(from: datePicker.date)
-             edtDate.resignFirstResponder()
-             //label.text = dateFormatter1.string(from: datePicker.date)
-         }
          
-         @objc func cancelClick() {
-             edtDate.resignFirstResponder()
-         }
         
         func checktype (x : Int)->Bool
                {

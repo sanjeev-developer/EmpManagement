@@ -42,3 +42,16 @@ userdata.dateofbirth = "23rd nov 1992"
                          userdata.commissionpercent = "20"
                          userdata.schoolname = "new school"
                          userdata.bonus = "50"
+
+var vehobj = Vehicledata()
+                       vehobj.vehicletype = "Car"
+                       vehobj.company = "Honda"
+                       vehobj.model = "HXT678"
+                       vehobj.plate = "ghj345"
+                       vehobj.year = "2010"
+                       
+                       userdata.Vehicle.append(vehobj)
+                         UserDetails.shared.userarray.append(userdata)
+                      }
+                    }
+

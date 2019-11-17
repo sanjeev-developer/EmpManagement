@@ -16,7 +16,10 @@ class EmpDescTabelTableViewCell: UITableViewCell {
     @IBOutlet var txt_Model: UILabel!
     @IBOutlet var txt_company: UILabel!
     @IBOutlet var txt_title_type: UILabel!
-    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

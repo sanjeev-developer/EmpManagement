@@ -63,4 +63,11 @@ edt_admin_username.text = UserDefaults.standard.string(forKey: "username")
 edt_admin_password.text = UserDefaults.standard.string(forKey: "password")
                               switchout.setOn(true, animated: false)
                              }
+else
+                             {
+                             edt_admin_username.text = ""
+                             edt_admin_password.text = ""
+                             switchout.setOn(false, animated: false)
+                             }
+
 

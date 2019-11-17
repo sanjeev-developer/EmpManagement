@@ -99,4 +99,17 @@ let obj = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewCo
    }
 
 
+   @IBAction func switchRem(_ sender: Any) {
+       
+       if(switchout.isOn)
+       {
+           Astatus = true
+       }
+       else
+       {
+           Astatus = false
+       }
+   }
+
+
 

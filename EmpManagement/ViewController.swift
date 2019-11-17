@@ -81,5 +81,11 @@ else
                                     UserDefaults.standard.set(edt_admin_username.text, forKey: "username") //Bool
                                     UserDefaults.standard.set(edt_admin_password.text, forKey: "password") //Bool
                                  }
+else
+{
+   UserDefaults.standard.set(false, forKey: "Key") //Bool
+   UserDefaults.standard.set("", forKey: "username") //Bool
+   UserDefaults.standard.set("", forKey: "password") //Bool
+}
 
 

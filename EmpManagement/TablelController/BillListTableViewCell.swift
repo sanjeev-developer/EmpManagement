@@ -18,3 +18,8 @@ class BillListTableViewCell: UITableViewCell {
 @IBOutlet var txtpnameGb: UILabel!
 @IBOutlet var txtgconsumedGb: UILabel!
 @IBOutlet var txtdate: UILabel!
+
+@IBOutlet var txtpucHydro: UILabel!
+   @IBOutlet var txtuconsumedHydro: UILabel!
+   @IBOutlet var txtanameHydro: UILabel!
+   @IBOutlet var txtcpgGb: UILabel!

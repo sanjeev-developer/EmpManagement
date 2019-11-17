@@ -23,3 +23,19 @@ class BillListTableViewCell: UITableViewCell {
    @IBOutlet var txtuconsumedHydro: UILabel!
    @IBOutlet var txtanameHydro: UILabel!
    @IBOutlet var txtcpgGb: UILabel!
+
+@IBOutlet var txtbillidlist: UILabel!
+
+@IBOutlet var txtcidbill: UILabel!
+
+@IBOutlet var txttotalbill: UILabel!
+@IBOutlet var txtbillemail: UILabel!
+
+@IBOutlet var txtbilltype: UILabel!
+@IBOutlet var txtphonenobill: UILabel!
+@IBOutlet var txtbillname: UILabel!
+override func awakeFromNib() {
+    super.awakeFromNib()
+    // Initialization code
+}
+

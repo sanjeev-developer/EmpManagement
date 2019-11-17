@@ -27,5 +27,4 @@ class Userdata {
     var fixedamount: String!
     var commissionpercent: String!
    
-    
 }

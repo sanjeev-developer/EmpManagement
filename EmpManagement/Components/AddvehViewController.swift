@@ -287,7 +287,20 @@ class AddvehViewController: UIViewController {
                   
                }
 
-              
+               func didTapCancel() {
+                 
+                   
+                   if (selection == 1){
+                                  companyName_txtFld.text = nil
+                                              companyName_txtFld.resignFirstResponder()
+                              }else if (selection == 2){
+                                  modelName_txtFld.text = nil
+                                              modelName_txtFld.resignFirstResponder()
+                              }else if (selection == 4){
+                               year_txtFld.text = nil
+                                              year_txtFld.resignFirstResponder()
+                              }
+               }
             
             func showdialog(data : String )
             {

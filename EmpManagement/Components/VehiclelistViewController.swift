@@ -36,4 +36,12 @@ else if (UserDetails.shared.userarray[position].Vehicle[indexPath.row].company =
 {
     cell.img_list.image = UIImage(named: "cheve")
 }
+else if (UserDetails.shared.userarray[position].Vehicle[indexPath.row].company == "BMW")
+{
+    cell.img_list.image = UIImage(named: "bmw")
+}
+else if (UserDetails.shared.userarray[position].Vehicle[indexPath.row].company == "Mercedes")
+{
+    cell.img_list.image = UIImage(named: "mercedes")
+}
 

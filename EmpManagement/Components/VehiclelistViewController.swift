@@ -60,3 +60,14 @@ else if (UserDetails.shared.userarray[position].Vehicle[indexPath.row].company =
                   {
                       cell.img_list.image = UIImage(named: "suzuki")
                   }
+else if (UserDetails.shared.userarray[position].Vehicle[indexPath.row].company == "Audi")
+                                  {
+                                      cell.img_list.image = UIImage(named: "Audi")
+                                  }
+               
+    
+    
+    
+    return cell
+}
+

@@ -203,32 +203,7 @@ class AddvehViewController: UIViewController {
                    }
                }
 
-               extension AddvehViewController : UIPickerViewDelegate,UIPickerViewDataSource{
-                   
-                   func numberOfComponents(in pickerView: UIPickerView) -> Int {
-                       return 1
-                   }
-                   
-                   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-                       return companyNameArr.count
-                   }
-                   
-                   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-                       return companyNameArr[row]
-                   }
-                   
-                   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-                       if pickerView.tag == 111{
-                           companyName_txtFld.text = companyNameArr[row]
-                       }else if pickerView.tag == 222{
-                           modelName_txtFld.text = companyNameArr[row]
-                       }else if pickerView.tag == 333{
-                           plate_txtFld.text = companyNameArr[row]
-                       }else{
-                           year_txtFld.text = companyNameArr[row]
-                       }
-                   }
-               }
+         
 
            extension AddvehViewController: ToolbarPickerViewDelegate {
 

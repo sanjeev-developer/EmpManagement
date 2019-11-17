@@ -157,12 +157,7 @@ class AddBillViewController: UIViewController  {
             }
         }
         
-        @IBAction func butBackBill(_ sender: Any) {
-            
-            let obj = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-                  self.navigationController?.pushViewController(obj, animated: true)
-        }
-        
+       
         
         func showdialog(data : String )  {
             

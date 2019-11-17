@@ -71,22 +71,7 @@ class AddvehViewController: UIViewController {
                {
                      showdialog(data: "please select year")
                }
-        else
-        {
-            var vehobj = Vehicledata()
-            vehobj.vehicletype = vehtype
-            vehobj.company = companyName_txtFld.text
-            vehobj.model = modelName_txtFld.text
-            vehobj.plate = plate_txtFld.text
-            vehobj.year = year_txtFld.text
-            
-            let obj = self.storyboard?.instantiateViewController(withIdentifier: "VehiclelistViewController") as! VehiclelistViewController
-            
-            if(purpose == "edit")
-                   {
-                     UserDetails.shared.userarray[userposition].Vehicle.remove(at: vehicleposition)
-                     UserDetails.shared.userarray[userposition].Vehicle.append(vehobj)
-            }
+       
             else
             {
                 UserDetails.shared.userarray[userposition].Vehicle.append(vehobj)

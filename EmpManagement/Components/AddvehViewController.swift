@@ -97,26 +97,7 @@ class AddvehViewController: UIViewController {
         }
         
     }
-    override func viewDidLoad() {
-                       super.viewDidLoad()
-
-                        self.but_addveh.layer.cornerRadius = 10
-                        self.but_addveh.clipsToBounds = true
-                       
-                       companyName_txtFld.inputView = pickerView
-                       modelName_txtFld.inputView = pickerView
-                      // plate_txtFld.inputView = pickerView
-                       year_txtFld.inputView = pickerView
-                    
-                       companyName_txtFld.inputAccessoryView = pickerView.toolbar
-                       modelName_txtFld.inputAccessoryView = pickerView.toolbar
-                      // plate_txtFld.inputAccessoryView = pickerView.toolbar
-                       year_txtFld.inputAccessoryView = pickerView.toolbar
-                    
-                       pickerView.dataSource = self as! UIPickerViewDataSource
-                       pickerView.delegate = self as! UIPickerViewDelegate
-                       pickerView.toolbarDelegate = self as! ToolbarPickerViewDelegate
-        
+    
         
                        
         if(purpose == "edit")

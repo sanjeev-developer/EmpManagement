@@ -71,3 +71,15 @@ else
                              }
 }
 
+@IBAction func but_login(_ sender: Any) {
+       
+               if(edt_admin_username.text == username && edt_admin_password.text == password)
+                      {
+                                 if(Astatus)
+                                 {
+                                    UserDefaults.standard.set(true, forKey: "Key") //Bool
+                                    UserDefaults.standard.set(edt_admin_username.text, forKey: "username") //Bool
+                                    UserDefaults.standard.set(edt_admin_password.text, forKey: "password") //Bool
+                                 }
+
+

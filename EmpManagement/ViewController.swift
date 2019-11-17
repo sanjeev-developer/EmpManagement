@@ -69,5 +69,5 @@ else
                              edt_admin_password.text = ""
                              switchout.setOn(false, animated: false)
                              }
-
+}
 

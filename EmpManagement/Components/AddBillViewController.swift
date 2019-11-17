@@ -273,22 +273,7 @@ class AddBillViewController: UIViewController  {
                 
         }
         
-        func interncheck ()->Bool
-        {
-            var checkreturn : Bool = false
-            
-            if(edt_inten_school.text == "")
-                                {
-                                    showdialog(data: "please enter the school")
-                                    checkreturn = true
-                                }
-                                else
-            {
-                checkreturn = false
-            }
-            
-            return checkreturn
-        }
+       
         
         func fulltime ()->Bool
                {

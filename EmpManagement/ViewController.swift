@@ -88,4 +88,15 @@ else
    UserDefaults.standard.set("", forKey: "password") //Bool
 }
 
+let obj = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")as! HomeViewController
+                          self.navigationController?.pushViewController(obj, animated: true)
+                      }
+                      else
+                      {
+                         showdialog(data: "please check your username and password")
+                      }
+
+   }
+
+
 

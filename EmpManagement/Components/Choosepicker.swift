@@ -24,17 +24,7 @@ override init(frame: CGRect) {
     self.commonInit()
 }
 
-required init?(coder aDecoder: NSCoder) {
-       super.init(coder: aDecoder)
-       self.commonInit()
-   }
-    
-private func commonInit() {
-       let toolBar = UIToolbar()
-       toolBar.barStyle = UIBarStyle.default
-       toolBar.isTranslucent = true
-       toolBar.tintColor = .black
-       toolBar.sizeToFit()
+
 
 let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.doneTapped))
 let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)

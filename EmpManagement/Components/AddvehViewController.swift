@@ -55,22 +55,6 @@ class AddvehViewController: UIViewController {
     
     @IBAction func butaddveh(_ sender: Any) {
         
-        if(companyName_txtFld.text == "")
-               {
-                   showdialog(data: "please select company")
-               }
-               else if(modelName_txtFld.text == "")
-               {
-                     showdialog(data: "please select model")
-               }
-               else if(plate_txtFld.text == "")
-               {
-                     showdialog(data: "please enter plate no")
-               }
-               else if(year_txtFld.text == "")
-               {
-                     showdialog(data: "please select year")
-               }
         else
         {
             var vehobj = Vehicledata()
@@ -308,5 +292,5 @@ class AddvehViewController: UIViewController {
                         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                         self.present(alert, animated: true)
             }
-        
+            
        }

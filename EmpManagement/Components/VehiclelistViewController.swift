@@ -75,3 +75,25 @@ func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) ->
     return 100
 }
 
+func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        print(indexPath.row)
+        
+        let alert = UIAlertController(title: "Alert", message: "Are you sure you want to delete this Vehicle", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Delete", style: .default, handler: { action in
+            //run your function here
+            self.deletevehicle(data : indexPath.row)
+        }))
+        alert.addAction(UIAlertAction(title: "Edit", style: .default, handler: { action in
+                   //run your function here
+                   self.movetoedit(data : indexPath.row)
+               }))
+
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+
+        self.present(alert, animated: true)
+        
+// Do any additional setup after loading the view.
+    }
+

@@ -108,3 +108,13 @@ func deletevehicle(data : Int)
     UserDetails.shared.userarray[position].Vehicle.remove(at: data)
     DispatchQueue.main.async { self.vehicletabel.reloadData() }
 }
+
+func movetoedit(data : Int)
+{
+    let obj = self.storyboard?.instantiateViewController(withIdentifier: "AddvehViewController") as! AddvehViewController
+  obj.vehicleposition = data
+  obj.userposition = position
+  obj.purpose = "edit"
+    self.navigationController?.pushViewController(obj, animated: true)
+}
+

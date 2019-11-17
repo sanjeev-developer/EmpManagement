@@ -15,3 +15,9 @@ class VehiclelistViewController: UIViewController , UITableViewDataSource, UITab
 @IBOutlet var but_add_vehicle: UIButton!
 var position : Int!
 
+
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return( UserDetails.shared.userarray[position].Vehicle.count)
+}
+
+

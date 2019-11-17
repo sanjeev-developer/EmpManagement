@@ -119,6 +119,6 @@ func showdialog(data : String )  {
             self.present(alert, animated: true)
 }
 
-
+}
 
 

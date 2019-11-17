@@ -101,7 +101,12 @@ class HomeViewController: UIViewController
                   self.navigationController?.pushViewController(obj, animated: true)
        }
     
-    
+    @objc func contactbrowser() {
+           print("Tap gesture.....")
+           let obj = self.storyboard?.instantiateViewController(withIdentifier: "WebviewViewController") as! WebviewViewController
+           obj.optionSelect = "contact"
+                  self.navigationController?.pushViewController(obj, animated: true)
+       }
     
     @objc func aboutbrowser() {
            print("Tap gesture.....")

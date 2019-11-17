@@ -97,3 +97,14 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 // Do any additional setup after loading the view.
     }
 
+@IBAction func but_back_clist(_ sender: Any) {
+    
+    let obj = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+    self.navigationController?.pushViewController(obj, animated: true)
+}
+
+func deletevehicle(data : Int)
+{
+    UserDetails.shared.userarray[position].Vehicle.remove(at: data)
+    DispatchQueue.main.async { self.vehicletabel.reloadData() }
+}

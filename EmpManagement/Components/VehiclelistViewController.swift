@@ -44,4 +44,11 @@ else if (UserDetails.shared.userarray[position].Vehicle[indexPath.row].company =
 {
     cell.img_list.image = UIImage(named: "mercedes")
 }
-
+else if (UserDetails.shared.userarray[position].Vehicle[indexPath.row].company == "Landrover")
+{
+    cell.img_list.image = UIImage(named: "landrover")
+}
+else if (UserDetails.shared.userarray[position].Vehicle[indexPath.row].company == "Bajaj")
+{
+    cell.img_list.image = UIImage(named: "chetak")
+}

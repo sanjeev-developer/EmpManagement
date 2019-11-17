@@ -8,7 +8,14 @@
 
 import UIKit
 
+class EmpDescTabelTableViewCell: UITableViewCell {
 
+    @IBOutlet var txt_plate: UILabel!
+    @IBOutlet var img_vehicle: UIImageView!
+    @IBOutlet var txt_year: UILabel!
+    @IBOutlet var txt_Model: UILabel!
+    @IBOutlet var txt_company: UILabel!
+    @IBOutlet var txt_title_type: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

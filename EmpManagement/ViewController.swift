@@ -35,3 +35,10 @@ for i in 1...userarray.count{
                              // UserDetails.shared.name = "Sanjeev"
 userdata.empname = userarray[i-1]
 userdata.empid = "Intern-345"
+userdata.dateofbirth = "23rd nov 1992"
+                         userdata.type = "Intern"
+                         userdata.salary = "100000"
+                         userdata.fixedamount = "5000"
+                         userdata.commissionpercent = "20"
+                         userdata.schoolname = "new school"
+                         userdata.bonus = "50"

@@ -20,7 +20,12 @@ class Userdata {
     var schoolname: String!
     var dateofbirth: String!
     var type: String!
-    
+    var salary: String!
+    var rate: String!
+    var HourWorked: String!
+    var bonus: String!
+    var fixedamount: String!
+    var commissionpercent: String!
    
     
 }

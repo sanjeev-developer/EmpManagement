@@ -302,7 +302,12 @@ class AddvehViewController: UIViewController {
                               }
                }
             
-            
+            func showdialog(data : String )
+            {
+                        let alert = UIAlertController(title: "Alert", message: data, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                        self.present(alert, animated: true)
+            }
             
             
             

@@ -47,13 +47,7 @@ class HomeViewController: UIViewController
                     aboutgesture.addTarget(self, action: #selector(aboutbrowser))
 
             
-         view_deletecoustmer.addGestureRecognizer(deletegesture)
-         view_coustmers.addGestureRecognizer(viewgesture)
-         view_addbills.addGestureRecognizer(addgesture)
-         view_add_vehicle.addGestureRecognizer(addveh)
-         view_aboutus.addGestureRecognizer(contactgesture)
-         view_contactus.addGestureRecognizer(aboutgesture)
-
+         
         
          view_coustmers.layer.cornerRadius = 10.0
          view_coustmers.layer.shadowColor = UIColor.gray.cgColor

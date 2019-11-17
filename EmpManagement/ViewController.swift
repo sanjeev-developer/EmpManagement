@@ -23,3 +23,6 @@ class ViewController: UIViewController {
 self.butlog.layer.cornerRadius = 10
 self.butlog.clipsToBounds = true
 self.imgLog.image = UIImage(named:"logo")
+
+if(UserDetails.shared.userarray.isEmpty)
+{

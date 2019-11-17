@@ -16,109 +16,114 @@ class ViewController: UIViewController {
     var checkstatus : Bool = false
     @IBOutlet var switchout: UISwitch!
     
-    override func viewDidLoad() {
-           super.viewDidLoad()
-// Do any additional setup after loading the view.
-
-self.butlog.layer.cornerRadius = 10
-self.butlog.clipsToBounds = true
-self.imgLog.image = UIImage(named:"logo")
-
-if(UserDetails.shared.userarray.isEmpty)
-{
-var temp : Int = 2346
-var userarray = ["naobie","wilson","tyler","desmond","santa monica"]
-var emailarray = ["naobie@gmail.com","wilson@gmail.com","tyler@gmail.com","desmond@gmail.com","santamonica@gmail.com"]
-for i in 1...userarray.count{
-                         var userdata = Userdata()
-
-                             // UserDetails.shared.name = "Sanjeev"
-userdata.empname = userarray[i-1]
-userdata.empid = "Intern-345"
-userdata.dateofbirth = "23rd nov 1992"
-                         userdata.type = "Intern"
-                         userdata.salary = "100000"
-                         userdata.fixedamount = "5000"
-                         userdata.commissionpercent = "20"
-                         userdata.schoolname = "new school"
-                         userdata.bonus = "50"
-
-var vehobj = Vehicledata()
-                       vehobj.vehicletype = "Car"
-                       vehobj.company = "Honda"
-                       vehobj.model = "HXT678"
-                       vehobj.plate = "ghj345"
-                       vehobj.year = "2010"
-                       
-                       userdata.Vehicle.append(vehobj)
-                         UserDetails.shared.userarray.append(userdata)
-                      }
-                    }
-
-
-var checkAstatus = UserDefaults.standard.bool(forKey: "Key")
-            if(checkAstatus)
-{
-edt_admin_username.text = UserDefaults.standard.string(forKey: "username")
-edt_admin_password.text = UserDefaults.standard.string(forKey: "password")
-                              switchout.setOn(true, animated: false)
-                             }
-else
-                             {
-                             edt_admin_username.text = ""
-                             edt_admin_password.text = ""
-                             switchout.setOn(false, animated: false)
-                             }
-}
-
-@IBAction func but_login(_ sender: Any) {
+   override func viewDidLoad() {
+            super.viewDidLoad()
+            // Do any additional setup after loading the view.
+            
+            self.butlog.layer.cornerRadius = 10
+            self.butlog.clipsToBounds = true
+            self.imgLog.image = UIImage(named:"logo")
+            
        
-               if(edt_admin_username.text == username && edt_admin_password.text == password)
-                      {
-                                 if(Astatus)
-                                 {
-                                    UserDefaults.standard.set(true, forKey: "Key") //Bool
-                                    UserDefaults.standard.set(edt_admin_username.text, forKey: "username") //Bool
-                                    UserDefaults.standard.set(edt_admin_password.text, forKey: "password") //Bool
-                                 }
-else
-{
-   UserDefaults.standard.set(false, forKey: "Key") //Bool
-   UserDefaults.standard.set("", forKey: "username") //Bool
-   UserDefaults.standard.set("", forKey: "password") //Bool
-}
+                  if(UserDetails.shared.userarray.isEmpty)
+                         {
+                          var temp : Int = 2346
+                          var userarray = ["naobie","wilson","tyler","desmond","santa monica"]
+                          var emailarray = ["naobie@gmail.com","wilson@gmail.com","tyler@gmail.com","desmond@gmail.com","santamonica@gmail.com"]
+                          for i in 1...userarray.count{
+                              var userdata = Userdata()
+                                                           // UserDetails.shared.name = "Sanjeev"
+                              userdata.empname = userarray[i-1]
+                              userdata.empid = "Intern-345"
+                              userdata.dateofbirth = "23rd nov 1992"
+                              userdata.type = "Intern"
+                              userdata.salary = "100000"
+                              userdata.fixedamount = "5000"
+                              userdata.commissionpercent = "20"
+                              userdata.schoolname = "new school"
+                              userdata.bonus = "50"
+                            
+                            var vehobj = Vehicledata()
+                            vehobj.vehicletype = "Car"
+                            vehobj.company = "Honda"
+                            vehobj.model = "HXT678"
+                            vehobj.plate = "ghj345"
+                            vehobj.year = "2010"
+                            
+                            userdata.Vehicle.append(vehobj)
+                              UserDetails.shared.userarray.append(userdata)
+                           }
+                         }
+            
+            
+                var checkAstatus = UserDefaults.standard.bool(forKey: "Key")
+                 if(checkAstatus)
+                                  {
+                                   edt_admin_username.text = UserDefaults.standard.string(forKey: "username")
+                                                                    edt_admin_password.text = UserDefaults.standard.string(forKey: "password")
+                                   switchout.setOn(true, animated: false)
+                                  }
+                                  else
+                                  {
+                                  edt_admin_username.text = ""
+                                  edt_admin_password.text = ""
+                                  switchout.setOn(false, animated: false)
+                                  }
+                
+         
+        }
 
-let obj = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")as! HomeViewController
-                          self.navigationController?.pushViewController(obj, animated: true)
-                      }
-                      else
-                      {
-                         showdialog(data: "please check your username and password")
-                      }
+        @IBAction func but_login(_ sender: Any) {
+            
+                    if(edt_admin_username.text == username && edt_admin_password.text == password)
+                           {
+                                      if(Astatus)
+                                      {
+                                         UserDefaults.standard.set(true, forKey: "Key") //Bool
+                                         UserDefaults.standard.set(edt_admin_username.text, forKey: "username") //Bool
+                                         UserDefaults.standard.set(edt_admin_password.text, forKey: "password") //Bool
+                                      }
+                                      else
+                                      {
+                                         UserDefaults.standard.set(false, forKey: "Key") //Bool
+                                         UserDefaults.standard.set("", forKey: "username") //Bool
+                                         UserDefaults.standard.set("", forKey: "password") //Bool
+                                      }
+                               
+                               let obj = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")as! HomeViewController
+                               self.navigationController?.pushViewController(obj, animated: true)
+                           }
+                           else
+                           {
+                              showdialog(data: "please check your username and password")
+                           }
+     
+        }
+        
 
-   }
-
-
-   @IBAction func switchRem(_ sender: Any) {
+        
+        @IBAction func switchRem(_ sender: Any) {
+            
+            if(switchout.isOn)
+            {
+                Astatus = true
+            }
+            else
+            {
+                Astatus = false
+            }
+        }
+        
        
-       if(switchout.isOn)
-       {
-           Astatus = true
-       }
-       else
-       {
-           Astatus = false
-       }
-   }
+        
+        func showdialog(data : String )  {
+            
+                    let alert = UIAlertController(title: "Alert", message: data, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Done", style: .cancel, handler: nil))
 
-func showdialog(data : String )  {
-    
-            let alert = UIAlertController(title: "Alert", message: data, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Done", style: .cancel, handler: nil))
-
-            self.present(alert, animated: true)
-}
-
-}
-
-
+                    self.present(alert, animated: true)
+        }
+        
+        
+        
+    }

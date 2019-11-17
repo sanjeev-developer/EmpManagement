@@ -10,7 +10,6 @@ import Foundation
 
 public class Vehicledata
 {
-    
        var vehicletype: String!
        var company: String!
        var model: String!

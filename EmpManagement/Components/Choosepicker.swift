@@ -14,7 +14,15 @@ protocol ToolbarPickerViewDelegate: class {
     func didTapCancel()
 }
 
+class ToolbarPickerView: UIPickerView {
 
+public private(set) var toolbar: UIToolbar?
+public weak var toolbarDelegate: ToolbarPickerViewDelegate?
+
+override init(frame: CGRect) {
+    super.init(frame: frame)
+    self.commonInit()
+}
 
 required init?(coder aDecoder: NSCoder) {
        super.init(coder: aDecoder)

@@ -341,29 +341,7 @@ class AddBillViewController: UIViewController  {
                }
 
         
-        func ptccheck ()->Bool
-               {
-                   var checkreturn : Bool = false
-                   
-                   if(edt_ptc_rate.text == "")
-                                       {
-                                           showdialog(data: "please enter rate")
-                                       }
-                                       else if(edt_ptc_hw.text == "")
-                                       {
-                                             showdialog(data: "please enter hour worked")
-                                       }
-                                       else if(edt_ptc_cp.text == "")
-                                       {
-                                             showdialog(data: "please enter commission percentage")
-                                       }
-                                        else {
-                                                          checkreturn = false
-                                                                            }
-                                                     
-                                                     return checkreturn
-               }
-        
+    
        
         
        }

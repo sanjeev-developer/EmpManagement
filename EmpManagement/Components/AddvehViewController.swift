@@ -36,11 +36,7 @@ class AddvehViewController: UIViewController {
             vehtype = "Motorcycle"
             
         }
-        else if(vehsegment.selectedSegmentIndex == 1)
-          {
-            vehtype = "Car"
-            
-        }
+       
         
     }
     

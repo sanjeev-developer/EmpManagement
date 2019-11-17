@@ -10,4 +10,8 @@ import UIKit
 
 class VehiclelistViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
 
+@IBOutlet var vehicletabel: UITableView!
+@IBOutlet var but_back_vlist: UIButton!
+@IBOutlet var but_add_vehicle: UIButton!
+var position : Int!
 

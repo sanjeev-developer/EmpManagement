@@ -31,3 +31,7 @@ var userarray = ["naobie","wilson","tyler","desmond","santa monica"]
 var emailarray = ["naobie@gmail.com","wilson@gmail.com","tyler@gmail.com","desmond@gmail.com","santamonica@gmail.com"]
 for i in 1...userarray.count{
                          var userdata = Userdata()
+
+                             // UserDetails.shared.name = "Sanjeev"
+userdata.empname = userarray[i-1]
+userdata.empid = "Intern-345"

@@ -111,5 +111,14 @@ let obj = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewCo
        }
    }
 
+func showdialog(data : String )  {
+    
+            let alert = UIAlertController(title: "Alert", message: data, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Done", style: .cancel, handler: nil))
+
+            self.present(alert, animated: true)
+}
+
+
 
 

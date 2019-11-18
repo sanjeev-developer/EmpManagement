@@ -19,13 +19,13 @@ class WebviewViewController: UIViewController, WKNavigationDelegate {
 
         if(optionSelect == "about")
         {
-            let url = URL(string: "https://www.hackingwithswift.com")!
+            let url = URL(string: "file:///Users/Vivek/Downloads/contacus.html")!
             webflow.load(URLRequest(url: url))
             webflow.allowsBackForwardNavigationGestures = true
         }
         else if(optionSelect == "contact")
         {
-            let url = URL(string: "https://www.hackingwithswift.com")!
+            let url = URL(string: "file:///Users/Vivek/Downloads/aboutUs.html")!
             webflow.load(URLRequest(url: url))
             webflow.allowsBackForwardNavigationGestures = true
         }
